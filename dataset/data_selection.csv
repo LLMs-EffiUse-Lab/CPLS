@@ -1,0 +1,10 @@
+﻿test_system,best,Jaccard,MMD
+Apache,HealthApp,HealthApp,Thunderbird
+BGL,HealthApp,HealthApp,Zookeeper
+HDFS,Zookeeper,HealthApp,OpenStack
+HPC,HDFS,HDFS,Android
+Hadoop,HealthApp,HealthApp,Windows
+HealthApp,BGL,Spark,Android
+Linux,HDFS,HealthApp,OpenSSH
+Spark,HealthApp,HealthApp,Linux
+Zookeeper,HPC,HealthApp,Thunderbird
