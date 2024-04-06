@@ -33,40 +33,41 @@ if __name__ == '__main__':
         else:
             raise ValueError(f"Invalid problem type: {problem_type}")
 
-
-        save_dir = f"res/{problem_type}"
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
-
         for test_sys in system_list:
+            save_dir = f"res/{test_sys}/{problem_type}"
+            if not os.path.exists(save_dir):
+                os.makedirs(save_dir)
+
             train_sys = system_pair[system_pair['test_system'] == test_sys]['best'].values[0]
             df_pre_accuracy, df_true_accuracy, df_cost, df_label_accuracy = log_preprocess(data_name, model_list,
                                                                                            train_sys, test_sys)
             true_pt, true_pt_solution = get_true_pareto_front(df_true_accuracy, df_cost, model_list).run()
+            true_pt.to_csv(f"{save_dir}/true_pt_{itr}.csv")
             exp_pt, exp_pt_solution = get_expected_pareto_front(df_pre_accuracy, df_true_accuracy, df_cost,
                                                                 model_list).run()
+            exp_pt.to_csv(f"{save_dir}/exp_pt_{itr}.csv")
 
-            smsemoa_res, smsemoa_solutions = sms_emoa(df_true_accuracy, df_cost, model_list,
-                                                      termination=100).run()
+            smsemoa_res, smsemoa_solutions = sms_emoa(df_pre_accuracy, df_true_accuracy, df_cost,
+                                                model_list, termination=100).run()
             smsemoa_res.to_csv(f"{save_dir}/smsemoa_res_{itr}.csv")
 
-            nsga2_res, nsga2_solutions = nsga2(df_true_accuracy, df_cost, model_list,
-                                               termination=100).run()
+            nsga2_res, nsga2_solutions = nsga2(df_pre_accuracy, df_true_accuracy, df_cost,
+                                                model_list, termination=100).run()
             nsga2_res.to_csv(f"{save_dir}/nsga2_res_{itr}.csv")
 
-            rnsga2_res, rnsga2_solutions = rnsga2(df_true_accuracy, df_cost, model_list,
-                                                  termination=100).run()
+            rnsga2_res, rnsga2_solutions = rnsga2(df_pre_accuracy, df_true_accuracy, df_cost,
+                                                model_list, termination=100).run()
             rnsga2_res.to_csv(f"{save_dir}/rnsga2_res_{itr}.csv")
 
-            mopso_res, mopso_solutions = MOPSO(df_true_accuracy, df_cost, model_list,
-                                               termination=100).run()
+            mopso_res, mopso_solutions = MOPSO(df_pre_accuracy, df_true_accuracy, df_cost,
+                                                model_list, termination=100).run()
             mopso_res.to_csv(f"{save_dir}/mopso_res_{itr}.csv")
 
-            moead_res, moead_solutions = MOEAD(df_true_accuracy, df_cost, model_list,
-                                               termination=100).run()
+            moead_res, moead_solutions = MOEAD(df_pre_accuracy, df_true_accuracy, df_cost,
+                                                model_list, termination=100).run()
             moead_res.to_csv(f"{save_dir}/moead_res_{itr}.csv")
 
-            moeadgen_res, moeadgen_solutions = MOEADGEN(df_true_accuracy, df_cost, model_list,
+            moeadgen_res, moeadgen_solutions = MOEADGEN(df_pre_accuracy, df_true_accuracy, df_cost, model_list,
                                                         termination=100).run()
             moeadgen_res.to_csv(f"{save_dir}/moeadgen_res_{itr}.csv")
 
