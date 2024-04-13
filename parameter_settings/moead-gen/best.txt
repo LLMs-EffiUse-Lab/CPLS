@@ -1,0 +1,3 @@
+[I 2023-10-15 03:54:39,348] Trial 62 finished with value: 0.1180381272760797 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 16, 'pop_size': 200}. Best is trial 62 with value: 0.1180381272760797.
+
+best params:  {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 16, 'pop_size': 200} best value:  0.1180381272760797

@@ -1,0 +1,31 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_nspso.log"))
+[I 2023-10-14 23:21:49,129] Using an existing study with name 'algs_para_setting_nspso' instead of creating a new one.
+[I 2023-10-15 04:00:12,052] Trial 28 finished with value: 0.20953112842571966 and parameters: {'omega': 0.11995981532355382, 'c1': 0.16243722230221502, 'c2': 0.27506416002996836, 'v_coeff': 0.723334443363347, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:06:49,613] Trial 26 finished with value: 0.17234598305062585 and parameters: {'omega': 0.32584074328252366, 'c1': 0.30688744453006334, 'c2': 0.5678021477788489, 'v_coeff': 0.022648272062468555, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:08:57,484] Trial 29 finished with value: 0.18697664044569895 and parameters: {'omega': 0.11826442980412766, 'c1': 0.7170730019935001, 'c2': 0.4870060923170694, 'v_coeff': 0.3701497132351609, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 05:01:46,910] Trial 21 finished with value: 0.20105636842803584 and parameters: {'omega': 0.2677704645396023, 'c1': 0.4187333354344217, 'c2': 0.9802583083553336, 'v_coeff': 0.5203383326787439, 'pop_size': 150}. Best is trial 48 with value: 0.13745247928215557.
+[I 2023-10-15 05:21:43,447] Trial 20 finished with value: 0.18800538912067571 and parameters: {'omega': 0.257484236335789, 'c1': 0.7935252589612538, 'c2': 0.8570908907801771, 'v_coeff': 0.2785337049374479, 'pop_size': 150}. Best is trial 44 with value: 0.13609192917448557.
+[I 2023-10-15 05:27:51,574] Trial 23 finished with value: 0.16161053499273412 and parameters: {'omega': 0.04355214894352977, 'c1': 0.7006504617599971, 'c2': 0.2833305963884932, 'v_coeff': 0.5722848424581272, 'pop_size': 150}. Best is trial 44 with value: 0.13609192917448557.
+[I 2023-10-15 05:33:10,453] Trial 24 finished with value: 0.1786550191288611 and parameters: {'omega': 0.8582939886769526, 'c1': 0.8655184436202703, 'c2': 0.6832619790896175, 'v_coeff': 0.09855498430974297, 'pop_size': 150}. Best is trial 60 with value: 0.13530167529637893.
+[I 2023-10-15 05:49:02,491] Trial 25 finished with value: 0.18561280243038128 and parameters: {'omega': 0.4095352400764509, 'c1': 0.6928261997522407, 'c2': 0.5167391285905852, 'v_coeff': 0.8565926882072473, 'pop_size': 150}. Best is trial 60 with value: 0.13530167529637893.
+[I 2023-10-15 06:11:58,726] Trial 27 finished with value: 0.1874476318507035 and parameters: {'omega': 0.8219722412585478, 'c1': 0.6973979402565034, 'c2': 0.49757266445030557, 'v_coeff': 0.1268734583322696, 'pop_size': 200}. Best is trial 60 with value: 0.13530167529637893.
+[I 2023-10-15 06:12:16,798] Trial 22 finished with value: 0.20127915649720515 and parameters: {'omega': 0.35434593058441455, 'c1': 0.1480966045197133, 'c2': 0.5948290621675049, 'v_coeff': 0.10008989514868405, 'pop_size': 200}. Best is trial 60 with value: 0.13530167529637893.
+Number of CPUs: 208
+Trial 24 finished with best value: 0.1786550191288611 and parameters: {'omega': 0.8582939886769526, 'c1': 0.8655184436202703, 'c2': 0.6832619790896175, 'v_coeff': 0.09855498430974297, 'pop_size': 150}. 
+best params:  {'omega': 0.3603676978762703, 'c1': 0.8446465199819189, 'c2': 0.24823084710068477, 'v_coeff': 0.9121158874573687, 'pop_size': 150} best value:  0.13530167529637893
+
+======================================================================================
+                  Resource Usage on 2023-10-15 06:12:22:
+   Job Id:             98129478.gadi-pbs
+   Project:            rd66
+   Exit Status:        0
+   Service Units:      43.79
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 08:11:53        
+   Memory Requested:   16.0GB                Memory Used: 287.02MB        
+   Walltime requested: 48:00:00            Walltime Used: 06:50:34        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

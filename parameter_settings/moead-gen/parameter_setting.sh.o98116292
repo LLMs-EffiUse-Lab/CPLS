@@ -1,0 +1,29 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moeadgen.log"))
+[I 2023-10-14 19:52:07,934] Using an existing study with name 'algs_para_setting_moeadgen' instead of creating a new one.
+[I 2023-10-14 21:11:16,213] Trial 47 finished with value: 0.2027160527978759 and parameters: {'weight_generation': 'random', 'decomposition': 'bi', 'neighbours': 13, 'pop_size': 50}. Best is trial 49 with value: 0.16297706642339152.
+[I 2023-10-14 21:54:33,825] Trial 43 finished with value: 0.1578956722894693 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'bi', 'neighbours': 26, 'pop_size': 100}. Best is trial 30 with value: 0.13860501860750768.
+[I 2023-10-14 22:39:31,734] Trial 45 finished with value: 0.12769397655278258 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 23, 'pop_size': 150}. Best is trial 45 with value: 0.12769397655278258.
+[I 2023-10-14 23:17:40,336] Trial 44 finished with value: 0.16652852118524195 and parameters: {'weight_generation': 'random', 'decomposition': 'bi', 'neighbours': 18, 'pop_size': 200}. Best is trial 34 with value: 0.12661245238548133.
+[I 2023-10-14 23:24:51,141] Trial 46 finished with value: 0.16581636068763167 and parameters: {'weight_generation': 'random', 'decomposition': 'bi', 'neighbours': 10, 'pop_size': 200}. Best is trial 35 with value: 0.12044779010877989.
+Number of CPUs: 208
+Trial 45 finished with best value: 0.12769397655278258 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 23, 'pop_size': 150}. 
+Traceback (most recent call last):
+  File "/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py", line 387, in <module>
+    save_res_(alg=alg, job_num=1000, solution=study.best_params)
+NameError: name 'job_num' is not defined
+
+======================================================================================
+                  Resource Usage on 2023-10-14 23:24:55:
+   Job Id:             98116292.gadi-pbs
+   Project:            rd66
+   Exit Status:        1
+   Service Units:      22.75
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 04:02:31        
+   Memory Requested:   16.0GB                Memory Used: 230.18MB        
+   Walltime requested: 48:00:00            Walltime Used: 03:33:18        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

@@ -1,0 +1,411 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+[I 2023-09-25 17:19:15,448] A new study created in memory with name: algs_para_setting
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:20:05,867] Trial 0 finished with value: 0.0016490883986674306 and parameters: {'sampling_sum': 4, 'initial_solution_size': 39}. Best is trial 0 with value: 0.0016490883986674306.
+Local search finished and the searchiing time is:  50.38157844543457
+Trial 0 finished with best value: 0.0016490883986674306 and parameters: {'sampling_sum': 4, 'initial_solution_size': 39}. 
+Start local search!
+The gap number is:  39
+[I 2023-09-25 17:20:53,469] Trial 1 finished with value: 0.0011379408936249467 and parameters: {'sampling_sum': 24, 'initial_solution_size': 83}. Best is trial 1 with value: 0.0011379408936249467.
+Local search finished and the searchiing time is:  47.570162534713745
+Trial 1 finished with best value: 0.0011379408936249467 and parameters: {'sampling_sum': 24, 'initial_solution_size': 83}. 
+Start local search!
+The gap number is:  34
+[I 2023-09-25 17:21:42,086] Trial 2 finished with value: 0.0010892812509759786 and parameters: {'sampling_sum': 27, 'initial_solution_size': 88}. Best is trial 2 with value: 0.0010892812509759786.
+Local search finished and the searchiing time is:  48.5853476524353
+Trial 2 finished with best value: 0.0010892812509759786 and parameters: {'sampling_sum': 27, 'initial_solution_size': 88}. 
+Start local search!
+The gap number is:  37
+[I 2023-09-25 17:22:28,345] Trial 3 finished with value: 0.0016479662586745296 and parameters: {'sampling_sum': 5, 'initial_solution_size': 96}. Best is trial 2 with value: 0.0010892812509759786.
+Local search finished and the searchiing time is:  46.230576515197754
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:22:59,122] Trial 4 finished with value: 0.008490596046429457 and parameters: {'sampling_sum': 2, 'initial_solution_size': 94}. Best is trial 2 with value: 0.0010892812509759786.
+Local search finished and the searchiing time is:  30.762446880340576
+Start local search!
+The gap number is:  19
+[I 2023-09-25 17:23:58,424] Trial 5 finished with value: 0.0009212727347847621 and parameters: {'sampling_sum': 15, 'initial_solution_size': 14}. Best is trial 5 with value: 0.0009212727347847621.
+Local search finished and the searchiing time is:  59.26995062828064
+Trial 5 finished with best value: 0.0009212727347847621 and parameters: {'sampling_sum': 15, 'initial_solution_size': 14}. 
+Start local search!
+The gap number is:  33
+[I 2023-09-25 17:24:28,945] Trial 6 finished with value: 0.008256976913126966 and parameters: {'sampling_sum': 2, 'initial_solution_size': 41}. Best is trial 5 with value: 0.0009212727347847621.
+Local search finished and the searchiing time is:  30.50513219833374
+Start local search!
+The gap number is:  31
+[I 2023-09-25 17:25:16,276] Trial 7 finished with value: 0.001172673184180506 and parameters: {'sampling_sum': 18, 'initial_solution_size': 45}. Best is trial 5 with value: 0.0009212727347847621.
+Local search finished and the searchiing time is:  47.30116295814514
+Start local search!
+The gap number is:  29
+[I 2023-09-25 17:26:01,199] Trial 8 finished with value: 0.0015928421235120664 and parameters: {'sampling_sum': 8, 'initial_solution_size': 44}. Best is trial 5 with value: 0.0009212727347847621.
+Local search finished and the searchiing time is:  44.89565324783325
+Start local search!
+The gap number is:  32
+[I 2023-09-25 17:26:50,774] Trial 9 finished with value: 0.0008777314962153035 and parameters: {'sampling_sum': 17, 'initial_solution_size': 94}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.544618368148804
+Trial 9 finished with best value: 0.0008777314962153035 and parameters: {'sampling_sum': 17, 'initial_solution_size': 94}. 
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:27:41,490] Trial 10 finished with value: 0.0013321458237467306 and parameters: {'sampling_sum': 13, 'initial_solution_size': 68}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.664514780044556
+Start local search!
+The gap number is:  26
+[I 2023-09-25 17:28:31,854] Trial 11 finished with value: 0.0011603083353520743 and parameters: {'sampling_sum': 18, 'initial_solution_size': 65}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.32777214050293
+Start local search!
+The gap number is:  23
+[I 2023-09-25 17:29:40,204] Trial 12 finished with value: 0.0017680149324209751 and parameters: {'sampling_sum': 14, 'initial_solution_size': 10}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  68.31686925888062
+Start local search!
+The gap number is:  23
+[I 2023-09-25 17:31:06,201] Trial 13 finished with value: 0.0012645077806824002 and parameters: {'sampling_sum': 22, 'initial_solution_size': 14}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  85.95783853530884
+Start local search!
+The gap number is:  27
+[I 2023-09-25 17:31:56,722] Trial 14 finished with value: 0.0016437709578988081 and parameters: {'sampling_sum': 10, 'initial_solution_size': 26}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.48665976524353
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:32:44,407] Trial 15 finished with value: 0.0010643397447149456 and parameters: {'sampling_sum': 21, 'initial_solution_size': 78}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  47.64707970619202
+Start local search!
+The gap number is:  28
+[I 2023-09-25 17:33:34,263] Trial 16 finished with value: 0.0009724493103106084 and parameters: {'sampling_sum': 29, 'initial_solution_size': 59}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.819504499435425
+Start local search!
+The gap number is:  25
+[I 2023-09-25 17:34:20,038] Trial 17 finished with value: 0.0013222005150384279 and parameters: {'sampling_sum': 16, 'initial_solution_size': 24}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  45.719871044158936
+Start local search!
+The gap number is:  35
+[I 2023-09-25 17:35:06,947] Trial 18 finished with value: 0.0014427380508891575 and parameters: {'sampling_sum': 11, 'initial_solution_size': 74}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  46.873867988586426
+Start local search!
+The gap number is:  27
+[I 2023-09-25 17:35:56,912] Trial 19 finished with value: 0.0013402401590452229 and parameters: {'sampling_sum': 18, 'initial_solution_size': 53}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.929577589035034
+Start local search!
+The gap number is:  33
+[I 2023-09-25 17:37:23,859] Trial 20 finished with value: 0.0011292515115797317 and parameters: {'sampling_sum': 21, 'initial_solution_size': 27}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  86.90552639961243
+Start local search!
+The gap number is:  34
+[I 2023-09-25 17:38:16,029] Trial 21 finished with value: 0.0009311168944299714 and parameters: {'sampling_sum': 29, 'initial_solution_size': 58}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  52.13195586204529
+Start local search!
+The gap number is:  35
+[I 2023-09-25 17:39:05,361] Trial 22 finished with value: 0.0010024085394048558 and parameters: {'sampling_sum': 24, 'initial_solution_size': 55}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.29385042190552
+Start local search!
+The gap number is:  29
+[I 2023-09-25 17:39:57,734] Trial 23 finished with value: 0.0014758632197284204 and parameters: {'sampling_sum': 28, 'initial_solution_size': 33}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  52.33559560775757
+Start local search!
+The gap number is:  32
+[I 2023-09-25 17:40:46,009] Trial 24 finished with value: 0.0013874418511495286 and parameters: {'sampling_sum': 14, 'initial_solution_size': 71}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.239640951156616
+Start local search!
+The gap number is:  36
+[I 2023-09-25 17:41:32,908] Trial 25 finished with value: 0.0011189601997280176 and parameters: {'sampling_sum': 26, 'initial_solution_size': 87}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  46.85989546775818
+Start local search!
+The gap number is:  32
+[I 2023-09-25 17:42:22,528] Trial 26 finished with value: 0.0010915554290594695 and parameters: {'sampling_sum': 30, 'initial_solution_size': 61}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.583558797836304
+Start local search!
+The gap number is:  21
+[I 2023-09-25 17:43:48,706] Trial 27 finished with value: 0.0015437794989797997 and parameters: {'sampling_sum': 8, 'initial_solution_size': 15}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  86.14195656776428
+Start local search!
+The gap number is:  33
+[I 2023-09-25 17:44:34,708] Trial 28 finished with value: 0.0012638978781250101 and parameters: {'sampling_sum': 17, 'initial_solution_size': 100}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  45.96592688560486
+Start local search!
+The gap number is:  25
+[I 2023-09-25 17:45:25,249] Trial 29 finished with value: 0.0012435303722654455 and parameters: {'sampling_sum': 20, 'initial_solution_size': 47}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.50567030906677
+Start local search!
+The gap number is:  28
+[I 2023-09-25 17:46:15,312] Trial 30 finished with value: 0.0013485056866344165 and parameters: {'sampling_sum': 25, 'initial_solution_size': 32}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.02487587928772
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:47:05,687] Trial 31 finished with value: 0.0012044726406733126 and parameters: {'sampling_sum': 30, 'initial_solution_size': 61}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.336742877960205
+Start local search!
+The gap number is:  27
+[I 2023-09-25 17:47:57,035] Trial 32 finished with value: 0.0008796817587155266 and parameters: {'sampling_sum': 28, 'initial_solution_size': 52}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  51.30960464477539
+Start local search!
+The gap number is:  29
+[I 2023-09-25 17:48:44,119] Trial 33 finished with value: 0.000960475869279747 and parameters: {'sampling_sum': 23, 'initial_solution_size': 50}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  47.045501708984375
+Start local search!
+The gap number is:  32
+[I 2023-09-25 17:49:35,878] Trial 34 finished with value: 0.0008836264728080211 and parameters: {'sampling_sum': 27, 'initial_solution_size': 81}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  51.71941947937012
+Start local search!
+The gap number is:  31
+[I 2023-09-25 17:50:26,494] Trial 35 finished with value: 0.0009674684207167013 and parameters: {'sampling_sum': 27, 'initial_solution_size': 83}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.57767987251282
+Start local search!
+The gap number is:  31
+[I 2023-09-25 17:51:15,081] Trial 36 finished with value: 0.0011683703823689646 and parameters: {'sampling_sum': 25, 'initial_solution_size': 94}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.550344467163086
+Start local search!
+The gap number is:  36
+[I 2023-09-25 17:52:14,316] Trial 37 finished with value: 0.001236110674784207 and parameters: {'sampling_sum': 11, 'initial_solution_size': 89}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  59.19656538963318
+Start local search!
+The gap number is:  27
+[I 2023-09-25 17:53:01,396] Trial 38 finished with value: 0.0016434468267883947 and parameters: {'sampling_sum': 5, 'initial_solution_size': 78}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  47.04563069343567
+Start local search!
+The gap number is:  30
+[I 2023-09-25 17:53:49,070] Trial 39 finished with value: 0.001208363397656692 and parameters: {'sampling_sum': 15, 'initial_solution_size': 37}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  47.6362144947052
+Start local search!
+The gap number is:  32
+[I 2023-09-25 17:54:41,004] Trial 40 finished with value: 0.001027881710283957 and parameters: {'sampling_sum': 20, 'initial_solution_size': 99}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  51.897029638290405
+Start local search!
+The gap number is:  36
+[I 2023-09-25 17:55:31,358] Trial 41 finished with value: 0.0008916919443562513 and parameters: {'sampling_sum': 28, 'initial_solution_size': 81}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.313687324523926
+Start local search!
+The gap number is:  38
+[I 2023-09-25 17:56:23,830] Trial 42 finished with value: 0.0009340746208521239 and parameters: {'sampling_sum': 27, 'initial_solution_size': 90}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  52.43165326118469
+Start local search!
+The gap number is:  38
+[I 2023-09-25 17:57:12,032] Trial 43 finished with value: 0.0012052088181819338 and parameters: {'sampling_sum': 28, 'initial_solution_size': 83}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.164000272750854
+Start local search!
+The gap number is:  31
+[I 2023-09-25 17:58:02,927] Trial 44 finished with value: 0.0009846882982807806 and parameters: {'sampling_sum': 24, 'initial_solution_size': 78}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.85679841041565
+Start local search!
+The gap number is:  29
+[I 2023-09-25 17:58:51,936] Trial 45 finished with value: 0.0011005458804368852 and parameters: {'sampling_sum': 26, 'initial_solution_size': 94}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.97000002861023
+Start local search!
+The gap number is:  33
+[I 2023-09-25 17:59:41,777] Trial 46 finished with value: 0.0016047513171390372 and parameters: {'sampling_sum': 8, 'initial_solution_size': 84}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.80432987213135
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:00:33,223] Trial 47 finished with value: 0.0008953541026932702 and parameters: {'sampling_sum': 22, 'initial_solution_size': 69}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  51.406394958496094
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:01:21,671] Trial 48 finished with value: 0.0010676382452846753 and parameters: {'sampling_sum': 23, 'initial_solution_size': 70}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.41063570976257
+Start local search!
+The gap number is:  37
+[I 2023-09-25 18:02:12,563] Trial 49 finished with value: 0.0009085416270090279 and parameters: {'sampling_sum': 26, 'initial_solution_size': 64}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  50.851829051971436
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:03:01,147] Trial 50 finished with value: 0.0008916656668736241 and parameters: {'sampling_sum': 28, 'initial_solution_size': 76}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  48.54498553276062
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:03:54,183] Trial 51 finished with value: 0.0012581742203329961 and parameters: {'sampling_sum': 28, 'initial_solution_size': 75}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  52.992857456207275
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:04:39,428] Trial 52 finished with value: 0.0009102868346173226 and parameters: {'sampling_sum': 29, 'initial_solution_size': 66}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  45.20545053482056
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:05:33,223] Trial 53 finished with value: 0.0010176141134350147 and parameters: {'sampling_sum': 25, 'initial_solution_size': 80}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  53.75342392921448
+Start local search!
+The gap number is:  29
+[I 2023-09-25 18:06:22,472] Trial 54 finished with value: 0.0008797691563047842 and parameters: {'sampling_sum': 27, 'initial_solution_size': 72}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  49.21238422393799
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:07:10,283] Trial 55 finished with value: 0.0009048578046721925 and parameters: {'sampling_sum': 30, 'initial_solution_size': 74}. Best is trial 9 with value: 0.0008777314962153035.
+Local search finished and the searchiing time is:  47.77148246765137
+Start local search!
+The gap number is:  39
+[I 2023-09-25 18:07:58,643] Trial 56 finished with value: 0.0008264545888648984 and parameters: {'sampling_sum': 28, 'initial_solution_size': 91}. Best is trial 56 with value: 0.0008264545888648984.
+Local search finished and the searchiing time is:  48.31958866119385
+Trial 56 finished with best value: 0.0008264545888648984 and parameters: {'sampling_sum': 28, 'initial_solution_size': 91}. 
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:08:50,965] Trial 57 finished with value: 0.001020766555062392 and parameters: {'sampling_sum': 27, 'initial_solution_size': 92}. Best is trial 56 with value: 0.0008264545888648984.
+Local search finished and the searchiing time is:  52.281293630599976
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:09:40,314] Trial 58 finished with value: 0.00077876334708183 and parameters: {'sampling_sum': 29, 'initial_solution_size': 87}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  49.30997157096863
+Trial 58 finished with best value: 0.00077876334708183 and parameters: {'sampling_sum': 29, 'initial_solution_size': 87}. 
+Start local search!
+The gap number is:  40
+[I 2023-09-25 18:10:31,518] Trial 59 finished with value: 0.0009655360104491611 and parameters: {'sampling_sum': 29, 'initial_solution_size': 97}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.16318392753601
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:11:17,957] Trial 60 finished with value: 0.0011026804375823187 and parameters: {'sampling_sum': 26, 'initial_solution_size': 87}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  46.40097999572754
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:12:06,981] Trial 61 finished with value: 0.0015643112062336477 and parameters: {'sampling_sum': 29, 'initial_solution_size': 85}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.97094440460205
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:12:55,331] Trial 62 finished with value: 0.0010345021282096225 and parameters: {'sampling_sum': 27, 'initial_solution_size': 92}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.31061291694641
+Start local search!
+The gap number is:  40
+[I 2023-09-25 18:13:41,186] Trial 63 finished with value: 0.0024990292353012215 and parameters: {'sampling_sum': 30, 'initial_solution_size': 97}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  45.81660723686218
+Start local search!
+The gap number is:  37
+[I 2023-09-25 18:14:29,991] Trial 64 finished with value: 0.0009866202492107559 and parameters: {'sampling_sum': 28, 'initial_solution_size': 76}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.7650146484375
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:15:20,845] Trial 65 finished with value: 0.001115383371373756 and parameters: {'sampling_sum': 25, 'initial_solution_size': 87}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.81370782852173
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:16:08,601] Trial 66 finished with value: 0.0010852286816059882 and parameters: {'sampling_sum': 23, 'initial_solution_size': 72}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  47.717222929000854
+Start local search!
+The gap number is:  28
+[I 2023-09-25 18:16:54,874] Trial 67 finished with value: 0.0013792019968569783 and parameters: {'sampling_sum': 24, 'initial_solution_size': 51}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  46.23505353927612
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:17:41,778] Trial 68 finished with value: 0.0010033374534453964 and parameters: {'sampling_sum': 29, 'initial_solution_size': 81}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  46.86241006851196
+Start local search!
+The gap number is:  32
+[I 2023-09-25 18:18:33,044] Trial 69 finished with value: 0.0010812132573800575 and parameters: {'sampling_sum': 27, 'initial_solution_size': 42}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.20658254623413
+Start local search!
+The gap number is:  30
+[I 2023-09-25 18:19:24,225] Trial 70 finished with value: 0.0012204625006071738 and parameters: {'sampling_sum': 19, 'initial_solution_size': 90}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.14240908622742
+Start local search!
+The gap number is:  32
+[I 2023-09-25 18:20:16,030] Trial 71 finished with value: 0.0009814889762142902 and parameters: {'sampling_sum': 28, 'initial_solution_size': 81}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.76415491104126
+Start local search!
+The gap number is:  37
+[I 2023-09-25 18:21:07,529] Trial 72 finished with value: 0.0010740830741806985 and parameters: {'sampling_sum': 30, 'initial_solution_size': 56}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.460015296936035
+Start local search!
+The gap number is:  36
+[I 2023-09-25 18:22:01,439] Trial 73 finished with value: 0.0010341947441308479 and parameters: {'sampling_sum': 26, 'initial_solution_size': 86}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  53.86986708641052
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:22:52,519] Trial 74 finished with value: 0.0011067132437585293 and parameters: {'sampling_sum': 28, 'initial_solution_size': 80}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.04270362854004
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:23:42,436] Trial 75 finished with value: 0.0009646872773661178 and parameters: {'sampling_sum': 27, 'initial_solution_size': 92}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  49.87685203552246
+Start local search!
+The gap number is:  38
+[I 2023-09-25 18:24:31,124] Trial 76 finished with value: 0.0010919590512554057 and parameters: {'sampling_sum': 29, 'initial_solution_size': 77}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.64779353141785
+Start local search!
+The gap number is:  27
+[I 2023-09-25 18:25:17,206] Trial 77 finished with value: 0.0009219791593188913 and parameters: {'sampling_sum': 25, 'initial_solution_size': 72}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  46.043447494506836
+Start local search!
+The gap number is:  38
+[I 2023-09-25 18:26:08,521] Trial 78 finished with value: 0.0012529155551252611 and parameters: {'sampling_sum': 13, 'initial_solution_size': 83}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.27639889717102
+Start local search!
+The gap number is:  39
+[I 2023-09-25 18:26:58,769] Trial 79 finished with value: 0.0009447079245641818 and parameters: {'sampling_sum': 30, 'initial_solution_size': 95}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.20707893371582
+Start local search!
+The gap number is:  38
+[I 2023-09-25 18:27:32,642] Trial 80 finished with value: 0.0061027854369872835 and parameters: {'sampling_sum': 3, 'initial_solution_size': 89}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  33.842859983444214
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:28:33,873] Trial 81 finished with value: 0.0010535445156708032 and parameters: {'sampling_sum': 22, 'initial_solution_size': 68}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  61.19265365600586
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:29:24,481] Trial 82 finished with value: 0.0008788232856057867 and parameters: {'sampling_sum': 28, 'initial_solution_size': 63}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.56637501716614
+Start local search!
+The gap number is:  29
+[I 2023-09-25 18:30:15,376] Trial 83 finished with value: 0.0010251424881379883 and parameters: {'sampling_sum': 28, 'initial_solution_size': 63}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.85223650932312
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:31:04,101] Trial 84 finished with value: 0.001050947725705128 and parameters: {'sampling_sum': 26, 'initial_solution_size': 59}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.68496775627136
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:31:55,730] Trial 85 finished with value: 0.0009763105988950838 and parameters: {'sampling_sum': 27, 'initial_solution_size': 67}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.58978080749512
+Start local search!
+The gap number is:  28
+[I 2023-09-25 18:32:47,537] Trial 86 finished with value: 0.0008270217559723011 and parameters: {'sampling_sum': 24, 'initial_solution_size': 48}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.76564359664917
+Start local search!
+The gap number is:  30
+[I 2023-09-25 18:33:38,094] Trial 87 finished with value: 0.0009487970265409112 and parameters: {'sampling_sum': 24, 'initial_solution_size': 48}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.51722741127014
+Start local search!
+The gap number is:  33
+[I 2023-09-25 18:34:23,916] Trial 88 finished with value: 0.0012066166824613864 and parameters: {'sampling_sum': 29, 'initial_solution_size': 52}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  45.78375577926636
+Start local search!
+The gap number is:  27
+[I 2023-09-25 18:35:15,314] Trial 89 finished with value: 0.0011551974636384973 and parameters: {'sampling_sum': 16, 'initial_solution_size': 54}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.359987020492554
+Start local search!
+The gap number is:  39
+[I 2023-09-25 18:36:05,729] Trial 90 finished with value: 0.0011097096639634757 and parameters: {'sampling_sum': 26, 'initial_solution_size': 46}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.35718560218811
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:36:57,562] Trial 91 finished with value: 0.0009227408063170302 and parameters: {'sampling_sum': 28, 'initial_solution_size': 57}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.790794134140015
+Start local search!
+The gap number is:  34
+[I 2023-09-25 18:37:49,141] Trial 92 finished with value: 0.0010588220486719149 and parameters: {'sampling_sum': 27, 'initial_solution_size': 49}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.53867959976196
+Start local search!
+The gap number is:  29
+[I 2023-09-25 18:38:47,072] Trial 93 finished with value: 0.0009191475284192513 and parameters: {'sampling_sum': 29, 'initial_solution_size': 44}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  57.88800406455994
+Start local search!
+The gap number is:  31
+[I 2023-09-25 18:39:39,927] Trial 94 finished with value: 0.0009949526914441473 and parameters: {'sampling_sum': 30, 'initial_solution_size': 39}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  52.81530261039734
+Start local search!
+The gap number is:  31
+[I 2023-09-25 18:40:30,228] Trial 95 finished with value: 0.00138371800416537 and parameters: {'sampling_sum': 25, 'initial_solution_size': 73}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.24004626274109
+Start local search!
+The gap number is:  37
+[I 2023-09-25 18:41:21,540] Trial 96 finished with value: 0.0012947810355472577 and parameters: {'sampling_sum': 28, 'initial_solution_size': 82}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  51.26940584182739
+Start local search!
+The gap number is:  27
+[I 2023-09-25 18:42:08,932] Trial 97 finished with value: 0.0009155534132213107 and parameters: {'sampling_sum': 26, 'initial_solution_size': 61}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  47.35238552093506
+Start local search!
+The gap number is:  35
+[I 2023-09-25 18:42:59,257] Trial 98 finished with value: 0.0012105514327155251 and parameters: {'sampling_sum': 28, 'initial_solution_size': 85}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  50.284186363220215
+Start local search!
+The gap number is:  37
+[I 2023-09-25 18:43:47,703] Trial 99 finished with value: 0.0009099710009982841 and parameters: {'sampling_sum': 27, 'initial_solution_size': 75}. Best is trial 58 with value: 0.00077876334708183.
+Local search finished and the searchiing time is:  48.404205322265625
+best params:  {'sampling_sum': 29, 'initial_solution_size': 87} best value:  0.00077876334708183

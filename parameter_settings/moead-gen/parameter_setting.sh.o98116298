@@ -1,0 +1,30 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moeadgen.log"))
+[I 2023-10-14 19:52:00,931] Using an existing study with name 'algs_para_setting_moeadgen' instead of creating a new one.
+[I 2023-10-14 21:08:22,858] Trial 32 finished with value: 0.19709605781915163 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'bi', 'neighbours': 25, 'pop_size': 50}. Best is trial 49 with value: 0.16297706642339152.
+[I 2023-10-14 21:22:22,386] Trial 31 finished with value: 0.1767607556932704 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 21, 'pop_size': 50}. Best is trial 49 with value: 0.16297706642339152.
+[I 2023-10-14 21:51:08,360] Trial 30 finished with value: 0.13860501860750768 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 100}. Best is trial 30 with value: 0.13860501860750768.
+[I 2023-10-14 22:20:03,339] Trial 33 finished with value: 0.1356899695274416 and parameters: {'weight_generation': 'grid', 'decomposition': 'tchebycheff', 'neighbours': 30, 'pop_size': 150}. Best is trial 16 with value: 0.12777490561538002.
+[I 2023-10-14 22:40:14,750] Trial 34 finished with value: 0.12661245238548133 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. Best is trial 34 with value: 0.12661245238548133.
+Number of CPUs: 208
+Trial 30 finished with best value: 0.13860501860750768 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 100}. 
+Trial 34 finished with best value: 0.12661245238548133 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. 
+Traceback (most recent call last):
+  File "/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py", line 387, in <module>
+    save_res_(alg=alg, job_num=job_num, solution=study.best_params)
+NameError: name 'job_num' is not defined
+
+======================================================================================
+                  Resource Usage on 2023-10-14 22:40:18:
+   Job Id:             98116298.gadi-pbs
+   Project:            rd66
+   Exit Status:        1
+   Service Units:      17.99
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 03:09:52        
+   Memory Requested:   16.0GB                Memory Used: 220.95MB        
+   Walltime requested: 48:00:00            Walltime Used: 02:48:41        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

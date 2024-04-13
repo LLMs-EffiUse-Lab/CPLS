@@ -1,0 +1,33 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moead.log"))
+[I 2023-10-14 23:16:20,265] Using an existing study with name 'algs_para_setting_moead' instead of creating a new one.
+[I 2023-10-15 01:35:26,536] Trial 22 finished with value: 0.20008385305898824 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 10, 'pop_size': 50}. Best is trial 90 with value: 0.1617155416536386.
+[I 2023-10-15 01:52:15,272] Trial 20 finished with value: 0.1525224233336521 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 22, 'pop_size': 50}. Best is trial 20 with value: 0.1525224233336521.
+[I 2023-10-15 02:28:04,448] Trial 25 finished with value: 0.16843468972008446 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 13, 'pop_size': 50}. Best is trial 30 with value: 0.14874871074951454.
+[I 2023-10-15 03:52:40,344] Trial 26 finished with value: 0.17863982852150173 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'bi', 'neighbours': 16, 'pop_size': 100}. Best is trial 48 with value: 0.13737484951762152.
+[I 2023-10-15 04:11:57,923] Trial 28 finished with value: 0.1766984982835048 and parameters: {'weight_generation': 'grid', 'decomposition': 'bi', 'neighbours': 16, 'pop_size': 100}. Best is trial 1 with value: 0.13123514178511786.
+[I 2023-10-15 05:04:27,163] Trial 21 finished with value: 0.12632582290566866 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 12, 'pop_size': 200}. Best is trial 10 with value: 0.12606825336901997.
+[I 2023-10-15 05:11:26,588] Trial 29 finished with value: 0.13832929435399202 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 27, 'pop_size': 150}. Best is trial 10 with value: 0.12606825336901997.
+[I 2023-10-15 05:18:22,074] Trial 24 finished with value: 0.13767752687386112 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 19, 'pop_size': 200}. Best is trial 42 with value: 0.12596494635622862.
+[I 2023-10-15 05:19:53,372] Trial 23 finished with value: 0.1186642789259097 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 200}. Best is trial 23 with value: 0.1186642789259097.
+[I 2023-10-15 05:25:59,644] Trial 27 finished with value: 0.12833224040188485 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. Best is trial 23 with value: 0.1186642789259097.
+Number of CPUs: 208
+Trial 20 finished with best value: 0.1525224233336521 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 22, 'pop_size': 50}. 
+Trial 24 finished with best value: 0.13767752687386112 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 19, 'pop_size': 200}. 
+Trial 23 finished with best value: 0.1186642789259097 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 200}. 
+best params:  {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 200} best value:  0.1186642789259097
+
+======================================================================================
+                  Resource Usage on 2023-10-15 05:26:05:
+   Job Id:             98129121.gadi-pbs
+   Project:            rd66
+   Exit Status:        0
+   Service Units:      39.43
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 07:35:18        
+   Memory Requested:   16.0GB                Memory Used: 246.16MB        
+   Walltime requested: 48:00:00            Walltime Used: 06:09:42        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

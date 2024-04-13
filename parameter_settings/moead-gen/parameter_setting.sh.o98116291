@@ -1,0 +1,28 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moeadgen.log"))
+[I 2023-10-14 19:51:31,309] A new study created in Journal with name: algs_para_setting_moeadgen
+[I 2023-10-14 22:26:39,992] Trial 4 finished with value: 0.1513868108027757 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 19, 'pop_size': 100}. Best is trial 16 with value: 0.12777490561538002.
+[I 2023-10-14 23:21:21,504] Trial 3 finished with value: 0.12422455593670495 and parameters: {'weight_generation': 'random', 'decomposition': 'tchebycheff', 'neighbours': 25, 'pop_size': 150}. Best is trial 35 with value: 0.12044779010877989.
+[I 2023-10-14 23:22:24,038] Trial 1 finished with value: 0.12526914857101346 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 22, 'pop_size': 150}. Best is trial 35 with value: 0.12044779010877989.
+[I 2023-10-14 23:23:16,499] Trial 0 finished with value: 0.13010891646054665 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 22, 'pop_size': 150}. Best is trial 35 with value: 0.12044779010877989.
+[I 2023-10-14 23:42:00,210] Trial 2 finished with value: 0.1367270170443832 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 14, 'pop_size': 200}. Best is trial 35 with value: 0.12044779010877989.
+Number of CPUs: 208
+Traceback (most recent call last):
+  File "/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py", line 387, in <module>
+    save_res_(alg=alg, job_num=1000, solution=study.best_params)
+NameError: name 'job_num' is not defined
+
+======================================================================================
+                  Resource Usage on 2023-10-14 23:42:04:
+   Job Id:             98116291.gadi-pbs
+   Project:            rd66
+   Exit Status:        1
+   Service Units:      24.63
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 04:22:51        
+   Memory Requested:   16.0GB                Memory Used: 368.62MB        
+   Walltime requested: 48:00:00            Walltime Used: 03:50:53        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

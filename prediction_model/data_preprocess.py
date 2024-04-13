@@ -192,20 +192,16 @@ if __name__ == '__main__':
                    'HPC', 'Zookeeper', 'Mac', 'Hadoop', 'Android', 'Windows', 'Apache',
                    'Thunderbird', 'Spark']
 
-    # method = "Jaccard"  # "Frobenius", "Cosine", "Pearson", "Jaccard", "Spearman", "MMD"
-    methods = ["CORR"] # ["Frobenius", "Cosine", "Pearson", "Jaccard", "Spearman", "MMD"]
+    methods = ["Jaccard"] # ["Frobenius", "Cosine", "Pearson", "Jaccard", "Spearman", "MMD"]
 
-    # model_list = ["Mixtral_8x7B", "llama2_7b", "llama2_13b", "llama2_70b", "Yi_34B", "Yi_6B", "j2_mid", "j2_ultra",
-    #               "gpt1"]  # ,
-
-    model_list = ["gpt0", "gpt0_enhance", "gpt0_simple", "gpt1", "gpt2", "gpt4"]
-
+    model_list = ["Mixtral_8x7B", "llama2_7b", "llama2_13b", "llama2_70b", "Yi_34B", "Yi_6B", "j2_mid", "j2_ultra",
+                  "gpt1"]
 
     save_dir = f"../res"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    # Calculate similarity matrix using Maximum Mean Discrepancy
-    all_data = pd.read_csv(f"../dataset/new_log_parsing.csv", index_col=0)
+
+    all_data = pd.read_csv(f"../dataset/log_parsing.csv", index_col=0)
     for model in model_list:
         all_data[model] = all_data['ref_answer'] == all_data[f'{model}_answer']
 

@@ -1,0 +1,25 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moeadgen.log"))
+[I 2023-10-14 23:14:10,156] Using an existing study with name 'algs_para_setting_moeadgen' instead of creating a new one.
+[I 2023-10-15 03:40:51,385] Trial 98 finished with value: 0.12200820486233493 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. Best is trial 82 with value: 0.11823803060333987.
+[I 2023-10-15 03:44:45,333] Trial 99 finished with value: 0.1261579275192235 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 16, 'pop_size': 200}. Best is trial 82 with value: 0.11823803060333987.
+[I 2023-10-15 04:02:35,546] Trial 96 finished with value: 0.13523883324248748 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. Best is trial 62 with value: 0.1180381272760797.
+[I 2023-10-15 04:04:14,535] Trial 95 finished with value: 0.12350586064412696 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 10, 'pop_size': 200}. Best is trial 62 with value: 0.1180381272760797.
+[I 2023-10-15 04:07:23,174] Trial 97 finished with value: 0.12892484439910196 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 27, 'pop_size': 200}. Best is trial 62 with value: 0.1180381272760797.
+Number of CPUs: 208
+best params:  {'weight_generation': 'low discrepancy', 'decomposition': 'tchebycheff', 'neighbours': 16, 'pop_size': 200} best value:  0.1180381272760797
+
+======================================================================================
+                  Resource Usage on 2023-10-15 04:07:26:
+   Job Id:             98128939.gadi-pbs
+   Project:            rd66
+   Exit Status:        0
+   Service Units:      31.35
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 05:30:48        
+   Memory Requested:   16.0GB                Memory Used: 263.46MB        
+   Walltime requested: 48:00:00            Walltime Used: 04:53:56        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

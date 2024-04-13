@@ -1,0 +1,32 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_moead.log"))
+[I 2023-10-14 23:16:01,598] Using an existing study with name 'algs_para_setting_moead' instead of creating a new one.
+[I 2023-10-15 01:35:05,174] Trial 13 finished with value: 0.1858052076696472 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 21, 'pop_size': 50}. Best is trial 90 with value: 0.1617155416536386.
+[I 2023-10-15 01:55:41,945] Trial 12 finished with value: 0.20292528263906115 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 26, 'pop_size': 50}. Best is trial 20 with value: 0.1525224233336521.
+[I 2023-10-15 02:21:31,025] Trial 16 finished with value: 0.19386582390276402 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 24, 'pop_size': 50}. Best is trial 30 with value: 0.14874871074951454.
+[I 2023-10-15 02:35:59,725] Trial 14 finished with value: 0.15201385703682552 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 26, 'pop_size': 100}. Best is trial 30 with value: 0.14874871074951454.
+[I 2023-10-15 03:59:41,435] Trial 18 finished with value: 0.18977192122542816 and parameters: {'weight_generation': 'grid', 'decomposition': 'bi', 'neighbours': 15, 'pop_size': 100}. Best is trial 1 with value: 0.13123514178511786.
+[I 2023-10-15 04:45:00,883] Trial 10 finished with value: 0.12606825336901997 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 28, 'pop_size': 200}. Best is trial 10 with value: 0.12606825336901997.
+[I 2023-10-15 04:48:17,944] Trial 19 finished with value: 0.1393100136757178 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 12, 'pop_size': 150}. Best is trial 10 with value: 0.12606825336901997.
+[I 2023-10-15 05:37:26,973] Trial 15 finished with value: 0.1360916694447675 and parameters: {'weight_generation': 'random', 'decomposition': 'weighted', 'neighbours': 14, 'pop_size': 200}. Best is trial 23 with value: 0.1186642789259097.
+[I 2023-10-15 05:39:39,101] Trial 17 finished with value: 0.15844944063503213 and parameters: {'weight_generation': 'random', 'decomposition': 'bi', 'neighbours': 20, 'pop_size': 200}. Best is trial 23 with value: 0.1186642789259097.
+[I 2023-10-15 05:43:34,646] Trial 11 finished with value: 0.12842203733556842 and parameters: {'weight_generation': 'low discrepancy', 'decomposition': 'weighted', 'neighbours': 16, 'pop_size': 200}. Best is trial 23 with value: 0.1186642789259097.
+Number of CPUs: 208
+Trial 18 finished with best value: 0.18977192122542816 and parameters: {'weight_generation': 'grid', 'decomposition': 'bi', 'neighbours': 15, 'pop_size': 100}. 
+Trial 10 finished with best value: 0.12606825336901997 and parameters: {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 28, 'pop_size': 200}. 
+best params:  {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 200} best value:  0.1186642789259097
+
+======================================================================================
+                  Resource Usage on 2023-10-15 05:43:39:
+   Job Id:             98129080.gadi-pbs
+   Project:            rd66
+   Exit Status:        0
+   Service Units:      41.35
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 07:50:54        
+   Memory Requested:   16.0GB                Memory Used: 248.71MB        
+   Walltime requested: 48:00:00            Walltime Used: 06:27:37        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

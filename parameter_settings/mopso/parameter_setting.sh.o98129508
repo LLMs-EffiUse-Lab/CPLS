@@ -1,0 +1,30 @@
+Loading python3/3.10.4
+  Loading requirement: intel-mkl/2021.4.0
+/scratch/rd66/yl1638/LLMs_allocation/LocalSearch/parameter_setting.py:333: ExperimentalWarning: JournalStorage is experimental (supported from v3.1.0). The interface can change in the future.
+  storage = JournalStorage(JournalFileStorage("optuna-journal_nspso.log"))
+[I 2023-10-14 23:22:00,532] Using an existing study with name 'algs_para_setting_nspso' instead of creating a new one.
+[I 2023-10-15 01:35:25,544] Trial 43 finished with value: 0.31729771884519126 and parameters: {'omega': 0.9660659579840705, 'c1': 0.6920787276517018, 'c2': 0.5715078748431202, 'v_coeff': 0.5464986207909573, 'pop_size': 50}. Best is trial 63 with value: 0.19779240573546608.
+[I 2023-10-15 02:05:21,434] Trial 45 finished with value: 0.24840763505281963 and parameters: {'omega': 0.08711682091146022, 'c1': 0.030565339857598683, 'c2': 0.22705117435366595, 'v_coeff': 0.6715476643865694, 'pop_size': 50}. Best is trial 63 with value: 0.19779240573546608.
+[I 2023-10-15 03:39:11,198] Trial 41 finished with value: 0.3085212921935955 and parameters: {'omega': 0.9696408930307394, 'c1': 0.7094994300623004, 'c2': 0.1442029234935237, 'v_coeff': 0.7983767241332382, 'pop_size': 100}. Best is trial 15 with value: 0.15619030754466393.
+[I 2023-10-15 03:49:03,608] Trial 46 finished with value: 0.22761666026375366 and parameters: {'omega': 0.5088682736424007, 'c1': 0.4084306633674768, 'c2': 0.9546690221700082, 'v_coeff': 0.7771096364843291, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:11:12,712] Trial 49 finished with value: 0.1859714096130796 and parameters: {'omega': 0.38004686624325446, 'c1': 0.688501987158732, 'c2': 0.6545594391242928, 'v_coeff': 0.3145009583685948, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:14:23,634] Trial 42 finished with value: 0.22890368577928566 and parameters: {'omega': 0.8836177255874295, 'c1': 0.1806627517309387, 'c2': 0.8657181783319536, 'v_coeff': 0.08744601219934767, 'pop_size': 100}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:39:37,995] Trial 40 finished with value: 0.17157479495399566 and parameters: {'omega': 0.39823061651090796, 'c1': 0.873419962832891, 'c2': 0.9201856871648577, 'v_coeff': 0.444489287686862, 'pop_size': 150}. Best is trial 2 with value: 0.15095054604594932.
+[I 2023-10-15 04:57:21,775] Trial 48 finished with value: 0.13745247928215557 and parameters: {'omega': 0.6336540418128765, 'c1': 0.7703949976175721, 'c2': 0.016384033665266307, 'v_coeff': 0.6995502101523694, 'pop_size': 150}. Best is trial 48 with value: 0.13745247928215557.
+[I 2023-10-15 05:20:38,606] Trial 44 finished with value: 0.13609192917448557 and parameters: {'omega': 0.6573915109649119, 'c1': 0.9039708343637739, 'c2': 0.05213090433362921, 'v_coeff': 0.4113447939405518, 'pop_size': 200}. Best is trial 44 with value: 0.13609192917448557.
+[I 2023-10-15 05:22:13,883] Trial 47 finished with value: 0.17160375397117653 and parameters: {'omega': 0.035761297425341065, 'c1': 0.4201692695807733, 'c2': 0.553793906955165, 'v_coeff': 0.6659603583629119, 'pop_size': 200}. Best is trial 44 with value: 0.13609192917448557.
+Number of CPUs: 208
+best params:  {'omega': 0.6573915109649119, 'c1': 0.9039708343637739, 'c2': 0.05213090433362921, 'v_coeff': 0.4113447939405518, 'pop_size': 200} best value:  0.13609192917448557
+
+======================================================================================
+                  Resource Usage on 2023-10-15 05:22:21:
+   Job Id:             98129508.gadi-pbs
+   Project:            rd66
+   Exit Status:        0
+   Service Units:      38.45
+   NCPUs Requested:    2                      NCPUs Used: 2               
+                                           CPU Time Used: 06:49:40        
+   Memory Requested:   16.0GB                Memory Used: 432.88MB        
+   Walltime requested: 48:00:00            Walltime Used: 06:00:27        
+   JobFS requested:    16.0GB                 JobFS used: 0B              
+======================================================================================

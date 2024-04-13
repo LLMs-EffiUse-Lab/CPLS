@@ -1,0 +1,1 @@
+best params:  {'sampling_sum': 29, 'initial_solution_size': 87} best value:  0.00077876334708183
