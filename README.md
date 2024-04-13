@@ -35,11 +35,11 @@ Optuna is a widely used hyperparameter optimization package. To ensure the effec
 The record of the tunning process is available under `OptLLM/parameter_setting/res` directory.
 ## 4 Results
 ### 4.1 Metrics 
-#### 4.1 Evaluating solution performance
+#### 4.1.1 Evaluating solution performance
 When assessing the performance of a single solution, such as submitting all jobs to an individual LLM, a direct comparison of the optimization objectives is feasible. 
 - $f_{cost}$: total cost of invoking LLM APIs
 - $f_{acc}$: the percentage of jobs processed accurately
-#### 4.2 Multi-objective optimization evaluation metrics
+#### 4.1.2 Multi-objective optimization evaluation metrics
 - Inverted Generational Distance (IGD): The IGD metric is used to measure the distance between the obtained solution set and the Pareto front (reference point set). A lower value of IGD represents a better performance.</p>
 
 - $\Delta$ metric: The $\Delta$ metric assesses the diversity and distribution of solutions across the Pareto front by measuring Euclidean distances between solutions and two extreme solutions.
@@ -53,21 +53,21 @@ Friedman Test: The Friedman test is a non-parametric statistical test that ranks
 
 Nemenyi Test: The Nemenyi test is a post-hoc test that is performed after the Friedman test if the null hypothesis is rejected. It is used to determine which specific pairs of algorithms have significant differences in their performance.
 ####
-#### Comparison with the Baselines
+#### 4.2.1 Comparison with the Baselines
 <p align="center"><img src="figs/baselines_acc.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_cost.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_metrics.png" width="800"><br></p>
 
-#### Ablation Study
+#### 4.2.2 Ablation Study
 <p align="center"><img src="figs/ablation.png" width="800"><br></p>
 
 <p align="center"><img src="figs/ablation_metric.png" width="500"><br></p>
 
 <p align="center"><img src="figs/ablation_acc.png" width="500"><br></p>
 
-#### Effect of Hyper-Parameter Settings
+#### 4.2.3 Effect of Hyper-Parameter Settings
 
 <p align="center"><img src="figs/beta.png" width="500"><br></p>
 
