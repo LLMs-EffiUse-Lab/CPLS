@@ -1,1 +1,1 @@
-best params:  {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29, 'pop_size': 200} best value:  0.1186642789259097
+best params:  {'weight_generation': 'grid', 'decomposition': 'weighted', 'neighbours': 29} best value:  0.1186642789259097

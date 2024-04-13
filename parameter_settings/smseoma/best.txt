@@ -1,0 +1,1 @@
+best params:  {'crossover_prob': 0.824422499906251, 'crossover_eta': 20, 'mutation_prob': 0.3149454497027264, 'mutation_eta': 19, 'sampling': 'FloatRandomSampling'} best value:  0.44286779863611253

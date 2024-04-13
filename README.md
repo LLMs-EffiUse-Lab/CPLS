@@ -22,15 +22,15 @@ OptLLM utilizes a heuristic search-based algorithm in optimization. We compare t
 ### 3.2 Parameter Setting
 Optuna is a widely used hyperparameter optimization package. To ensure the effectiveness and efficiency of all algorithms, we conduct parameter tuning using Optuna to choose optimal parameter settings. Based on the experiments, the parameters of algorithms are set as follows:
 
-| Algorithm  | Parameter Settings                                                                                                                  |
-|------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| CPLS       | initial_solution_size: 87, sampling_sum: 29                                                                                         |
-| NSGA-II    | crossover_prob: 0.7780, crossover_eta: 7, mutation_prob: 0.8119, mutation_eta: 9, sampling: 'LHS', selection: 'TournamentSelection' |
-| R-NSGA-II  | epsilon: 0.9964                                                                                                                     |
-| SMS-EMOA   | crossover_prob: 0.7595, crossover_eta: 5, mutation_prob: 0.0675, mutation_eta: 28, sampling: 'FloatRandomSampling'                  |
-| MOEA/D     | weight_generation: 'grid', decomposition: 'bi', neighbours: 10                                                                      |
-| MOEA/D-GEN | weight_generation: 'random', decomposition: 'tchebycheff', neighbours: 24                                                           |
-| MOPSO      | omega: 0.7887, c1: 0.7497, c2: 0.1537, v_coeff: 0.9518                                                                              |
+| Algorithm  | Parameter Settings                                                                                                               |
+|------------|----------------------------------------------------------------------------------------------------------------------------------|
+| CPLS       | initial_solution_size: 87, sampling_sum: 29                                                                                      |
+| NSGA-II    | crossover_prob: 0.5169, crossover_eta: 3, mutation_prob: 0.4258, mutation_eta: 27, sampling: 'LHS', selection: 'RandomSelection' |
+| R-NSGA-II  | epsilon: 0.6912                                                                                                                  |
+| SMS-EMOA   | crossover_prob: 0.8244, crossover_eta: 20, mutation_prob: 0.3149, mutation_eta: 19, sampling: 'FloatRandomSampling'              |
+| MOEA/D     | weight_generation: 'grid', decomposition: 'weighted', neighbours: 29                                                             |
+| MOEA/D-GEN | weight_generation: 'low discrepancy', decomposition: 'tchebycheff', neighbours: 16                                               |
+| MOPSO      | omega: 0.3634, c1: 0.8446, c2: 0.2482, v_coeff: 0.9121                                                                           |
 
 The record of the tunning process is available under `OptLLM/parameter_setting/res` directory.
 ## 4 Results
