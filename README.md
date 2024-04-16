@@ -53,19 +53,33 @@ Friedman Test: The Friedman test is a non-parametric statistical test that ranks
 
 Nemenyi Test: The Nemenyi test is a post-hoc test that is performed after the Friedman test if the null hypothesis is rejected. It is used to determine which specific pairs of algorithms have significant differences in their performance.
 ####
-#### 4.2.1 Comparison with the Baselines
+#### 4.2.1.1 Comparison with the Baselines
 <p align="center"><img src="figs/baselines_acc.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_cost.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_metrics.png" width="800"><br></p>
 
-#### 4.2.2 Ablation Study
+##### 4.2.1.2 Stastical Test
+
+The Friedman test is a non-parametric statistical test used to compare multiple paired samples. The test is based on ranking the data within each block (i.e., each sample) and comparing the average ranks between the different groups. The following table shows the p-values of the Friedman test for the 16 instances on IGD, $\Delta$, Accuracy and Cost are as follows:
+
+
+
+
+<p align="center"><img src="figs/RQ1_Fri.png" width="700"><br></p>
+
+Overall, the Friedman test results for all five datasets show extremely small p-values, indicating strong evidence against the null hypothesis. This suggests that there are significant differences between the groups being compared for each dataset. The results provide compelling evidence to reject the null hypothesis and accept the alternative hypothesis that at least one group differs from the others.
+
+
+#### 4.2.2.1 Ablation Study
 <p align="center"><img src="figs/ablation.png" width="800"><br></p>
 
 <p align="center"><img src="figs/ablation_metric.png" width="500"><br></p>
 
 <p align="center"><img src="figs/ablation_acc.png" width="500"><br></p>
+
+##### 4.2.2.2 Stastical Test
 
 #### 4.2.3 Effect of Hyper-Parameter Settings
 
