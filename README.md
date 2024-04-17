@@ -103,10 +103,12 @@ $ pip install -r requirements.txt
 $ python exp.py $
 
 ### 5.3 Source code
-All source code is available under `CPLS/igs` directory.
+All source code is available under `CPLS` directory.
 
 We used the standard version of NSGA-II, R-NSGA-II and SMS-EMOA implemented in the Pymoo library^[14], and MOPSO and MOEA/D in the Pygmo. 
 The source code of the baselines is available under `CPLS/baselines` directory.
+
+The code os the proposed CPLS is available under `CPLS/CPLS` directory.
 
 | script       | Description                                                               |
 | ------------ |---------------------------------------------------------------------------|
