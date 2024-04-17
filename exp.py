@@ -27,7 +27,7 @@ if __name__ == '__main__':
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 
-        train_sys = system_pair[system_pair['test_system'] == test_sys]['best'].values[0]
+        train_sys = system_pair[system_pair['test_system'] == test_sys]['LLMs'].values[0]
         df_pre_accuracy, df_true_accuracy, df_cost, df_label_accuracy = log_preprocess(data_name, model_list,
                                                                                        train_sys, test_sys)
         true_pt, true_pt_solution = get_true_pareto_front(df_true_accuracy, df_cost, model_list).run()
