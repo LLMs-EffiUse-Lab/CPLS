@@ -7,7 +7,6 @@ from baselines.pymoo_lib import *
 from baselines.pygmo_lib import *
 from prediction_model.help import *
 from prediction_model.prediction import *
-from prediction_model.data_preprocess import *
 
 if __name__ == '__main__':
 
