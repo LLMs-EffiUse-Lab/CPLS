@@ -9,7 +9,7 @@ Large Language Models (LLMs) like ChatGPT have gained significant attention beca
 ## 1. Framework
 CPLS consists of two main components: cross-project prediction and local-search based optimization. The prediction component utilizes knowledge from historical data across different projects to estimate the probability of an LLM correctly processing a query. With the cost and predicted accuracy, the optimization component selects the most suitable LLM for each query through problem-specific rules.
 
-<p align="center"><img src="figs/framework.jpg" width="800"><br>An overview of OptLLM</p>
+<p align="center"><img src="figs/framework.jpg" width="800"><br>An overview of CPLS</p>
 
 ## 2. Benchmarks
 To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. 
@@ -18,7 +18,7 @@ We leverage log data originated from the LogPai benchmark as a study case. LogPa
 
 ## 3. Baselines and Parameter Setting
 ### 3.1 Baselines
-OptLLM utilizes a heuristic search-based algorithm in optimization. We compare the effectiveness of this algorithm with well-known multi-objective optimization algorithms, including the Non-dominated Sorting Genetic Algorithm (NSGA-\rom{2})^[8], Multi-objective Particle Swarm Optimisation (MOPSO)^[9], and Multi-objective Evolutionary Algorithm with Decomposition (MOEA/D)^[10]. These three algorithms have been extensively studied and have proven to be effective in solving a wide range of multi-objective optimization problems. In addition, three variants of classic algorithms are also compared, including R-NSGA-\rom{2}^[11], SMS-EMOA^[12], and MOEA/D-GEN^[13]. It is important to note that all the evaluated multi-objective optimization algorithms are integrated with the same prediction component as OptLLM, to enable a fair comparison of the optimization strategies. 
+CPLS utilizes a heuristic search-based algorithm in optimization. We compare the effectiveness of this algorithm with well-known multi-objective optimization algorithms, including the Non-dominated Sorting Genetic Algorithm (NSGA-\rom{2})^[8], Multi-objective Particle Swarm Optimisation (MOPSO)^[9], and Multi-objective Evolutionary Algorithm with Decomposition (MOEA/D)^[10]. These three algorithms have been extensively studied and have proven to be effective in solving a wide range of multi-objective optimization problems. In addition, three variants of classic algorithms are also compared, including R-NSGA-\rom{2}^[11], SMS-EMOA^[12], and MOEA/D-GEN^[13]. It is important to note that all the evaluated multi-objective optimization algorithms are integrated with the same prediction component as CPLS, to enable a fair comparison of the optimization strategies. 
 ### 3.2 Parameter Setting
 Optuna is a widely used hyperparameter optimization package. To ensure the effectiveness and efficiency of all algorithms, we conduct parameter tuning using Optuna to choose optimal parameter settings. Based on the experiments, the parameters of algorithms are set as follows:
 
@@ -32,7 +32,7 @@ Optuna is a widely used hyperparameter optimization package. To ensure the effec
 | MOEA/D-GEN | weight_generation: 'low discrepancy', decomposition: 'tchebycheff', neighbours: 16                                               |
 | MOPSO      | omega: 0.3634, c1: 0.8446, c2: 0.2482, v_coeff: 0.9121                                                                           |
 
-The record of the tunning process is available under `OptLLM/parameter_setting/res` directory.
+The record of the tunning process is available under `CPLS/parameter_setting/res` directory.
 ## 4 Results
 ### 4.1 Metrics 
 #### 4.1.1 Evaluating solution performance
@@ -47,7 +47,7 @@ When assessing the performance of a single solution, such as submitting all jobs
 - Computation time: The time for obtaining the solution set, calculated by minute.</p>
 
 ### 4.2 Resutls and Analysis
-To verify the comparison, we conduct a statistical test to evaluate the performance of OptLLM and the baselines. We use the following statistical tests:
+To verify the comparison, we conduct a statistical test to evaluate the performance of CPLS and the baselines. We use the following statistical tests:
 
 Friedman Test: The Friedman test is a non-parametric statistical test that ranks the algorithms for each dataset separately. It tests the null hypothesis that all algorithms perform equally well. If the null hypothesis is rejected, it means that there are significant differences among the algorithms' performances.
 
@@ -103,10 +103,10 @@ $ pip install -r requirements.txt
 $ python exp.py $
 
 ### 5.3 Source code
-All source code is available under `OptLLM/igs` directory.
+All source code is available under `CPLS/igs` directory.
 
 We used the standard version of NSGA-II, R-NSGA-II and SMS-EMOA implemented in the Pymoo library^[14], and MOPSO and MOEA/D in the Pygmo. 
-The source code of the baselines is available under `OptLLM/baselines` directory.
+The source code of the baselines is available under `CPLS/baselines` directory.
 
 | script       | Description                                                               |
 | ------------ |---------------------------------------------------------------------------|
