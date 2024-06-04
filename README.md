@@ -11,10 +11,39 @@ CPLS consists of two main components: cross-project prediction and local-search 
 
 <p align="center"><img src="figs/framework.jpg" width="800"><br>An overview of CPLS</p>
 
-## 2. Benchmarks
-To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. 
+## 2. Additional Experiments
 
-We leverage log data originated from the LogPai benchmark as a study case. LogPai is a comprehensive collection of log data originating from 16 diverse systems
+To demonstrate the generalizability of CPLS, we conducted an additional experiment on text classification. For this experiment, we used the Overruling dataset as the training data to optimize the assignment of LLMs for the Headlines dataset.
+The Headline dataset consists of news headlines about gold prices, and the task is to classify each headline into one of four categories: up, down, neutral, or none, based on the price movement mentioned in the headline. An example is given as follows:
+
+_Please determine the price direction (up, down, neutral, or none) in the following news headlines.
+Question: Feb. gold gains $10.30, or 0.9%, to settle at $1,162/oz_
+
+(Answer: up)
+
+An example of a job from the Overruling dataset is:
+
+_Context: As such, La. Civ. Code art. 2365 is not applicable to the matter before us, and we specifically overrule this holding in Nash.
+Question: Is it overruling?_
+
+(Answer: yes)
+
+By using the Overruling dataset to train CPLS and then applying it to the Headline classification task, we aim to showcase the adaptability of our approach to different domains. The results of this experiment are presented below:
+
+<p align="center"><img src="figs/headlines_acc.png" width="800"><br>The solution with the highest accuracy by all algorithms for LLMs allocation</p>
+
+<p align="center"><img src="figs/headlines.png" width="800"><br>Cost ($) and Savings by CPLS to match the baseline's highest accuracy</p>
+
+<p align="center"><img src="figs/headlines_metrics.png" width="800"><br>Comparisons of Solution Sets from All Algorithms in terms of IGD, $\Delta$ and Time</p>
+
+We present the solution with the highest accuracy and the solution with the lowest cost. Compared to the baselines, CPLS achieves a 2.91-7.21% improvement in accuracy or a 90-98% reduction in cost. Moreover, the metrics used to evaluate the quality of the solution set considering both cost and accuracy, such as the Inverted Generational Distance (IGD) and the delta measure ($\Delta$), show that CPLS outperforms the baselines. 
+
+[//]: # (## 3. Benchmarks)
+
+[//]: # (To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. )
+
+[//]: # ()
+[//]: # (We leverage log data originated from the LogPai benchmark as a study case. LogPai is a comprehensive collection of log data originating from 16 diverse systems)
 
 ## 3. Baselines and Parameter Setting
 ### 3.1 Baselines
