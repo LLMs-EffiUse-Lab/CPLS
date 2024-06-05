@@ -12,7 +12,7 @@ CPLS consists of two main components: cross-project prediction and local-search 
 <p align="center"><img src="figs/framework.jpg" width="800"><br>An overview of CPLS</p>
 
 ## 2. Additional Experiments
-
+### 2.1. Text Classification
 To demonstrate the generalizability of CPLS, we conducted an additional experiment on text classification. For this experiment, we used the Overruling dataset as the training data to optimize the assignment of LLMs for the Headlines dataset.
 The Headline dataset consists of news headlines about gold prices, and the task is to classify each headline into one of four categories: up, down, neutral, or none, based on the price movement mentioned in the headline. An example is given as follows:
 
@@ -38,6 +38,66 @@ By using the Overruling dataset to train CPLS and then applying it to the Headli
 
 We present the solution with the highest accuracy and the solution with the lowest cost. Compared to the baselines, CPLS achieves a 2.91-7.21% improvement in accuracy or a 90-98% reduction in cost. Moreover, the metrics used to evaluate the quality of the solution set considering both cost and accuracy, such as the Inverted Generational Distance (IGD) and the delta measure ($\Delta$), show that CPLS outperforms the baselines. 
 
+### 2.2. Log Parsing (0-shot Prompt Template)
+
+The prompt template used in the log parsing experiment is as follows:
+
+_You will be provided with a log message. You must identify and abstract all the dynamic variables in logs with {{placeholders}} and output a static log template.
+For example:_
+
+_The template of [EXAMPLE LOG MESSAGE] is [EXAMPLE template]._
+
+_The template of [LOG MESSAGE] is_
+
+To investigate the influence of the queries, we also evaluate a different prompt template that doesn't contain any example (0-shot). The prompt template is as follows:
+
+_You will be provided with a log message. You must identify and abstract all the dynamic variables in logs with {placeholders} and output a static log template. Print the input log's template delimited by backticks._
+
+_Log message: [LOG MESSAGE]_
+
+We conduct experiments on a random selection of three instances due to time constraints.
+The experimental results demonstrate that CPLS effectiveness. On Apache, CPLS improves accuracy by 1.33%-50.29% or reduces cost by 2.22%-86.00%. For Linux, accuracy improvements range from 3.96%-43.84%, and cost savings span 1.01%-76.93%. Proxifier sees the most substantial gains, with accuracy improvements of 28.43%-144.82% and cost savings of 58.09%-82.42%. 
+
+CPLS still achieves a competitive improvement on Proxifier. The possible reason is that the current similarity analysis relies on log messages, and the performance of LLMs on this dataset is comparatively lower. In such cases, the prediction model's effectiveness may be limited. As previously discussed, inaccurate predictions can mislead even high-performance optimization algorithms, as they depend on predicted accuracies to guide the search process. Without problem-specific information to guide the search, baseline algorithms may encounter difficulties in escaping local optima and produce a narrow range of solutions, resulting in suboptimal outcomes.
+
+<p align="center"><img src="figs/log_parsing_0shot_acc.png" width="800"><br>The solution with the highest accuracy by all algorithms for LLMs allocation</p>
+
+<p align="center"><img src="figs/log_parsing_0shot_cost.png" width="800"><br>Cost ($) and Savings by CPLS to match the baseline's highest accuracy</p>
+
+<p align="center"><img src="figs/log_parsing_0shot_metric.png" width="800"><br>Comparisons of Solution Sets from All Algorithms in terms of IGD, $\Delta$ and Time</p>
+
+
+## 3. Log Analytics Paper Published in ICSME and ICSE
+
+1. An Effective Approach for Parsing Large Log Files (2022 ICSME)
+2. How to Configure Anomaly Event Detector on Software Logs?(2022 ICSME)
+3. Improving Log-Based Anomaly Detection with Component-Aware Analysis (2020 ICSME)
+4. An Exploratory Study of Logging Configuration Practice in Java(2019 ICSME)
+5. Comparing Constraints Mined From Execution Logs to Understand Software Evolution(2019 ICSME)
+6. An Approach to Recommendation of Verbosity Log Levels Based on Logging Intention(2019 ICSME)
+
+
+
+1. KnowLog: Knowledge Enhanced Pre-trained Language Model for Log Understanding (2024 ICSE)
+2. DivLog: Log Parsing with Prompt Enhanced In-Context Learning(2024 ICSE)
+3. LogShrink: Effective Log Compression by Leveraging Commonality and Variability of Log Data(2024 ICSE)
+4. MetaLog: Generalizable Cross-System Anomaly Detection from Logs with Meta-Learning(2024 ICSE)
+5. LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing(2024 ICSE)
+6. An Exploratory Investigation of Log Anomalies in Unmanned Aerial Vehicles(2024 ICSE)
+7. A Semantic-aware Parsing Approach for Log Analytics (2023 ICSE)
+8. Did We Miss Something Important? Studying and Exploring Variable-Aware Log Abstraction(2023 ICSE)
+9. How Do Developers' Profiles and Experiences Influence their Logging Practices? An Empirical Study of Industrial Practitioners(2023 ICSE)
+10. Log Parsing with Prompt-based Few-shot Learning(2023 ICSE)
+11. LogReducer: Identify and Reduce Log Hotspots in Kernel on the Fly(2023 ICSE)
+12. PILAR: Studying and Mitigating the Influence of Configurations on Log Parsing(2022 ICSE)
+13. Guidelines for Assessing the Accuracy of Log Message Template Identification Techniques(2022 ICSE)
+14. Log-based Anomaly Detection with Deep Learning: How Far Are We(2022 ICSE)
+15. DeepTraLog: Trace-Log Combined Microservice Anomaly Detection through Graph-based Deep Learning(2022 ICSE)
+16. Using Deep Learning to Generate Complete Log Statements(2022 ICSE)
+17. Automated Query Reformulation for Efficient Search Based on Query Logs from Stack OverflowACM SIGSOFT Dist(2021 ICSE)
+18. DeepLV: Suggesting Log Levels Using Ordinal Based Neural Networks(2021 ICSE)
+19. Semi-supervised Log-based Anomaly Detection via Probabilistic Label Estimation(2021 ICSE)
+20. Studying the Use of Java Logging Utilities in the Wild(2020 ICSE)
 [//]: # (## 3. Benchmarks)
 
 [//]: # (To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. )
@@ -45,10 +105,10 @@ We present the solution with the highest accuracy and the solution with the lowe
 [//]: # ()
 [//]: # (We leverage log data originated from the LogPai benchmark as a study case. LogPai is a comprehensive collection of log data originating from 16 diverse systems)
 
-## 3. Baselines and Parameter Setting
-### 3.1 Baselines
+## 4. Baselines and Parameter Setting
+### 4.1 Baselines
 CPLS utilizes a heuristic search-based algorithm in optimization. We compare the effectiveness of this algorithm with well-known multi-objective optimization algorithms, including the Non-dominated Sorting Genetic Algorithm (NSGA-\rom{2})^[8], Multi-objective Particle Swarm Optimisation (MOPSO)^[9], and Multi-objective Evolutionary Algorithm with Decomposition (MOEA/D)^[10]. These three algorithms have been extensively studied and have proven to be effective in solving a wide range of multi-objective optimization problems. In addition, three variants of classic algorithms are also compared, including R-NSGA-\rom{2}^[11], SMS-EMOA^[12], and MOEA/D-GEN^[13]. It is important to note that all the evaluated multi-objective optimization algorithms are integrated with the same prediction component as CPLS, to enable a fair comparison of the optimization strategies. 
-### 3.2 Parameter Setting
+### 4.2 Parameter Setting
 Optuna is a widely used hyperparameter optimization package. To ensure the effectiveness and efficiency of all algorithms, we conduct parameter tuning using Optuna to choose optimal parameter settings. Based on the experiments, the parameters of algorithms are set as follows:
 
 | Algorithm  | Parameter Settings                                                                                                               |
@@ -62,9 +122,9 @@ Optuna is a widely used hyperparameter optimization package. To ensure the effec
 | MOPSO      | omega: 0.3634, c1: 0.8446, c2: 0.2482, v_coeff: 0.9121                                                                           |
 
 The record of the tunning process is available under `CPLS/parameter_setting/res` directory.
-## 4 Results
-### 4.1 Metrics 
-#### 4.1.1 Evaluating solution performance
+## 5 Results
+### 5.1 Metrics 
+#### 5.1.1 Evaluating solution performance
 When assessing the performance of a single solution, such as submitting all jobs to an individual LLM, a direct comparison of the optimization objectives is feasible. 
 - $f_{cost}$: total cost of invoking LLM APIs
 - $f_{acc}$: the percentage of jobs processed accurately
@@ -75,21 +135,21 @@ When assessing the performance of a single solution, such as submitting all jobs
 
 - Computation time: The time for obtaining the solution set, calculated by minute.</p>
 
-### 4.2 Resutls and Analysis
+### 5.2 Resutls and Analysis
 To verify the comparison, we conduct a statistical test to evaluate the performance of CPLS and the baselines. We use the following statistical tests:
 
 Friedman Test: The Friedman test is a non-parametric statistical test that ranks the algorithms for each dataset separately. It tests the null hypothesis that all algorithms perform equally well. If the null hypothesis is rejected, it means that there are significant differences among the algorithms' performances.
 
 Nemenyi Test: The Nemenyi test is a post-hoc test that is performed after the Friedman test if the null hypothesis is rejected. It is used to determine which specific pairs of algorithms have significant differences in their performance.
 ####
-#### 4.2.1.1 Comparison with the Baselines
+#### 5.2.1.1 Comparison with the Baselines
 <p align="center"><img src="figs/baselines_acc.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_cost.png" width="800"><br></p>
 
 <p align="center"><img src="figs/baselines_metrics.png" width="800"><br></p>
 
-##### 4.2.1.2 Stastical Test
+##### 5.2.1.2 Stastical Test
 
 The Friedman test is a non-parametric statistical test used to compare multiple paired samples. The test is based on ranking the data within each block (i.e., each sample) and comparing the average ranks between the different groups. The following table shows the p-values of the Friedman test for the 16 instances on IGD, $\Delta$, Accuracy and Cost are as follows:
 
@@ -101,24 +161,24 @@ The Friedman test is a non-parametric statistical test used to compare multiple 
 Overall, the Friedman test results for all five datasets show extremely small p-values, indicating strong evidence against the null hypothesis. This suggests that there are significant differences between the groups being compared for each dataset. The results provide compelling evidence to reject the null hypothesis and accept the alternative hypothesis that at least one group differs from the others.
 
 
-#### 4.2.2.1 Ablation Study
+#### 5.2.2.1 Ablation Study
 <p align="center"><img src="figs/ablation.png" width="800"><br></p>
 
 <p align="center"><img src="figs/ablation_metric.png" width="500"><br></p>
 
 <p align="center"><img src="figs/ablation_acc.png" width="500"><br></p>
 
-##### 4.2.2.2 Stastical Test
+##### 5.2.2.2 Stastical Test
 
-#### 4.2.3 Effect of Hyper-Parameter Settings
+#### 5.2.3 Effect of Hyper-Parameter Settings
 
 <p align="center"><img src="figs/beta.png" width="500"><br></p>
 
 <p align="center"><img src="figs/delta.png" width="500"><br></p>
 
-## 5. Requirements
+## 6. Requirements
 All the code is available under `CPLS` directory.
-### 5.1 Library
+### 6.1 Library
 1. Python 3.11
 2. Pymoo
 3. tiktoken
@@ -128,10 +188,10 @@ All the code is available under `CPLS` directory.
 To install all libraries:
 $ pip install -r requirements.txt
 
-### 5.2 How to run CPLS
+### 7.2 How to run CPLS
 $ python exp.py $
 
-### 5.3 Source code
+### 7.3 Source code
 All source code is available under `CPLS` directory.
 
 We used the standard version of NSGA-II, R-NSGA-II and SMS-EMOA implemented in the Pymoo library^[14], and MOPSO and MOEA/D in the Pygmo. 
