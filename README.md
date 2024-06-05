@@ -11,7 +11,7 @@ CPLS consists of two main components: cross-project prediction and local-search 
 
 <p align="center"><img src="figs/framework.jpg" width="800"><br>An overview of CPLS</p>
 
-## 2. Additional Experiments
+## 2. Additional Experiment Results
 ### 2.1. Text Classification
 To demonstrate the generalizability of CPLS, we conducted an additional experiment on text classification. For this experiment, we used the Overruling dataset as the training data to optimize the assignment of LLMs for the Headlines dataset.
 The Headline dataset consists of news headlines about gold prices, and the task is to classify each headline into one of four categories: up, down, neutral, or none, based on the price movement mentioned in the headline. An example is given as follows:
