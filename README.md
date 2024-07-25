@@ -63,45 +63,8 @@ CPLS still achieves a competitive improvement on Proxifier. The possible reason 
 
 <p align="center"><img src="figs/log_parsing_0shot_metric.png" width="800"><br>Comparisons of Solution Sets from All Algorithms in terms of IGD, $\Delta$ and Time</p>
 
-
-## 3. Log Analytics Paper Published in ICSME and ICSE
-
-1. An Effective Approach for Parsing Large Log Files (2022 ICSME)
-2. How to Configure Anomaly Event Detector on Software Logs?(2022 ICSME)
-3. Improving Log-Based Anomaly Detection with Component-Aware Analysis (2020 ICSME)
-4. An Exploratory Study of Logging Configuration Practice in Java(2019 ICSME)
-5. Comparing Constraints Mined From Execution Logs to Understand Software Evolution(2019 ICSME)
-6. An Approach to Recommendation of Verbosity Log Levels Based on Logging Intention(2019 ICSME)
-
-
-
-1. KnowLog: Knowledge Enhanced Pre-trained Language Model for Log Understanding (2024 ICSE)
-2. DivLog: Log Parsing with Prompt Enhanced In-Context Learning(2024 ICSE)
-3. LogShrink: Effective Log Compression by Leveraging Commonality and Variability of Log Data(2024 ICSE)
-4. MetaLog: Generalizable Cross-System Anomaly Detection from Logs with Meta-Learning(2024 ICSE)
-5. LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing(2024 ICSE)
-6. An Exploratory Investigation of Log Anomalies in Unmanned Aerial Vehicles(2024 ICSE)
-7. A Semantic-aware Parsing Approach for Log Analytics (2023 ICSE)
-8. Did We Miss Something Important? Studying and Exploring Variable-Aware Log Abstraction(2023 ICSE)
-9. How Do Developers' Profiles and Experiences Influence their Logging Practices? An Empirical Study of Industrial Practitioners(2023 ICSE)
-10. Log Parsing with Prompt-based Few-shot Learning(2023 ICSE)
-11. LogReducer: Identify and Reduce Log Hotspots in Kernel on the Fly(2023 ICSE)
-12. PILAR: Studying and Mitigating the Influence of Configurations on Log Parsing(2022 ICSE)
-13. Guidelines for Assessing the Accuracy of Log Message Template Identification Techniques(2022 ICSE)
-14. Log-based Anomaly Detection with Deep Learning: How Far Are We(2022 ICSE)
-15. DeepTraLog: Trace-Log Combined Microservice Anomaly Detection through Graph-based Deep Learning(2022 ICSE)
-16. Using Deep Learning to Generate Complete Log Statements(2022 ICSE)
-17. Automated Query Reformulation for Efficient Search Based on Query Logs from Stack OverflowACM SIGSOFT Dist(2021 ICSE)
-18. DeepLV: Suggesting Log Levels Using Ordinal Based Neural Networks(2021 ICSE)
-19. Semi-supervised Log-based Anomaly Detection via Probabilistic Label Estimation(2021 ICSE)
-20. Studying the Use of Java Logging Utilities in the Wild(2020 ICSE)
-    
-[//]: # (## 3. Benchmarks)
-
-[//]: # (To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. )
-
-[//]: # ()
-[//]: # (We leverage log data originated from the LogPai benchmark as a study case. LogPai is a comprehensive collection of log data originating from 16 diverse systems)
+## 3. Benchmarks
+To evaluate the proposed approach, we conduct extensive experiments on LLM-based log parsing, a typical software maintenance task. We leverage log data originated from the LogPai benchmark as a study case. LogPai is a comprehensive collection of log data originating from 16 diverse systems
 
 ## 4. Baselines and Parameter Setting
 ### 4.1 Baselines
