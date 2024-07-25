@@ -1,10 +1,7 @@
-# CPLS
-This is the repository for the paper: 
+# CPLS: Optimizing the Assignment of LLM Queries
+This is the repository for the reuse and reproduction of experimental results presented in our ICWS'24 paper titled OptLLM: Optimal Assignment of Queries to Large Language Models.
 
-CPLS: Optimizing the Assignment of LLM Queries
-
-Abstract: 
-Large Language Models (LLMs) like ChatGPT have gained significant attention because of their impressive capabilities, leading to a dramatic increase in their integration into intelligent software engineering. However, their usage as a service with varying performance and price options presents a challenging trade-off between desired performance and the associated cost. To address this challenge, we propose CPLS, a framework that utilizes transfer learning and local search techniques for assigning intelligent software engineering jobs to LLM-based services. CPLS aims to minimize the total cost of LLM invocations while maximizing the overall accuracy. The framework first leverages knowledge from historical data across different projects to predict the probability of an LLM processing a query correctly. Then, CPLS incorporates problem-specific rules into a local search algorithm to effectively generate Pareto optimal solutions based on the predicted accuracy and cost. 
+CPLS(Cross-project Prediction and Local-search based optimization) is a framework that utilizes transfer learning and local search techniques for assigning intelligent software engineering jobs to LLM-based services. CPLS aims to minimize the total cost of LLM invocations while maximizing the overall accuracy. The framework first leverages knowledge from historical data across different projects to predict the probability of an LLM processing a query correctly. Then, CPLS incorporates problem-specific rules into a local search algorithm to effectively generate Pareto optimal solutions based on the predicted accuracy and cost. 
 
 ## 1. Framework
 CPLS consists of two main components: cross-project prediction and local-search based optimization. The prediction component utilizes knowledge from historical data across different projects to estimate the probability of an LLM correctly processing a query. With the cost and predicted accuracy, the optimization component selects the most suitable LLM for each query through problem-specific rules.
