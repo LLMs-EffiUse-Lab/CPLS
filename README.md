@@ -1,7 +1,7 @@
-# CPLS: Optimizing the Assignment of LLM Queries
+# CPLS
 This is the repository for the reuse and reproduction of experimental results presented in our ICSME'24 paper titled *CPLS: Optimizing the Assignment of LLM Queries*. 
 
-CPLS(Cross-project Prediction and Local-search based optimization) is a framework that utilizes transfer learning and local search techniques for assigning intelligent software engineering jobs to LLM-based services. CPLS aims to minimize the total cost of LLM invocations while maximizing the overall accuracy. The framework first leverages knowledge from historical data across different projects to predict the probability of an LLM processing a query correctly. Then, CPLS incorporates problem-specific rules into a local search algorithm to effectively generate Pareto optimal solutions based on the predicted accuracy and cost. 
+CPLS (Cross-project Prediction and Local-search based optimization) is a framework that utilizes transfer learning and local search techniques for assigning intelligent software engineering jobs to LLM-based services. CPLS aims to minimize the total cost of LLM invocations while maximizing the overall accuracy. The framework first leverages knowledge from historical data across different projects to predict the probability of an LLM processing a query correctly. Then, CPLS incorporates problem-specific rules into a local search algorithm to effectively generate Pareto optimal solutions based on the predicted accuracy and cost. 
 
 ## 1. Framework
 CPLS consists of two main components: cross-project prediction and local-search based optimization. The prediction component utilizes knowledge from historical data across different projects to estimate the probability of an LLM correctly processing a query. With the cost and predicted accuracy, the optimization component selects the most suitable LLM for each query through problem-specific rules.
